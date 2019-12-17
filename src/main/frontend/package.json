@@ -1,10 +1,12 @@
 {
-  "name": "photo",
+  "name": "like",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/like-button.js",
   "scripts": {
     "serve": "vue-cli-service serve --port 3001",
     "build": "vue-cli-service build",
+    "build:wc": "vue-cli-service build --target wc --name like-button src/components/like.vue",
     "lint": "vue-cli-service lint",
     "copy-to-resources": "export TARGET_DIR=../../../target/classes/META-INF/resources && mkdir -p ${TARGET_DIR} && cp -R ./dist/. ${TARGET_DIR}"
   },
