@@ -47,13 +47,13 @@ export default {
     };
   },
   props: {
-    photoId: Number
+    id: Number
   },
   methods: {
     like: function() {
       axios
         .post("/likes", {
-          id: this.photoId,
+          id: this.id,
           likes: 1
         })
         .then(() => (this.done = true));

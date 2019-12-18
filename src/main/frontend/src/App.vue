@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <like v-bind:photoId="1"></like>
+    <like id="1"></like>
   </div>
 </template>
 
